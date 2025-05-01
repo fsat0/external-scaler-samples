@@ -65,3 +65,5 @@ spec:
     - type: external
       metadata:
         scalerAddress: golang-external-scaler.golang-external-scaler-ns:6000
+        longitude: "-122.335167"
+        latitude: "48.608013"
