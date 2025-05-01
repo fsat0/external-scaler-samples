@@ -9,8 +9,6 @@ import (
 	"log"
 	"net"
 
-	// "log"
-	// "net"
 	"net/http"
 	"time"
 
@@ -19,7 +17,9 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-type ExternalScaler struct{}
+type ExternalScaler struct{
+	pb.UnimplementedExternalScalerServer
+}
 
 type USGSResponse struct {
 	Features []USGSFeature `json:"features"`
